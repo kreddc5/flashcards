@@ -22,6 +22,11 @@ app.get('/cards', (req, res) => {
     res.render('card', {prompt: 'Who is buried in grants tomb', colors});
 }); 
 
+app.get('/hello', (req, res) => { 
+    
+    res.render('hello', {prompt: 'This is the hello page for the new hello challenge'});
+}); 
+
 app.listen(3000, () => {
     console.log('app is live at localhost:3000');
 
