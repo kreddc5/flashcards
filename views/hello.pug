@@ -1,6 +1,7 @@
 extends hellotemp.pug 
 
 block content
-    sections#content
-        h2 Welcome, student!
-        
+     form(action='/hello', method='post')
+        label Please enter your name:   
+            input(type='', name='username')
+        button(type='submit') Submit 
